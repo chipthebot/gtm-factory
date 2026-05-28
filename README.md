@@ -46,6 +46,24 @@ Then edit:
 
 Use `prompts/start-mission.md` when starting a fresh agent run.
 
+## Customize A Mission
+
+Missions are meant to be specific.
+
+If a run needs logos, investors, pricing, ad screenshots, founder posts,
+certifications, public contact routes, or anything else, add that requirement
+to the mission itself:
+
+- `README.md` explains why the field matters.
+- `PROMPT.md` tells the agent how to find it and when to skip it.
+- `leads.template.csv` adds the columns.
+- `packet.md` and `sources.md` capture the evidence.
+- `assets/source-map.md` maps saved files to public URLs.
+
+Keep the repo-wide rules fixed: public sources only, cite URLs, no outreach,
+no logged-in pages, and no invented claims. The mission decides what to
+collect.
+
 ## Example Missions
 
 - `language-learning-creators`

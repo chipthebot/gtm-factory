@@ -24,6 +24,23 @@ A mission is one usecase hunt:
 Avoid vague market maps. A useful mission produces a small set of prospects a
 human can review.
 
+## Mission Customization
+
+Missions can ask for very specific fields.
+
+If the user wants logos, investors, pricing, hiring signals, public ads,
+founder posts, certifications, store platforms, tech stack clues, or other
+details, put those requirements in the mission files:
+
+- `README.md` - why this detail matters
+- `PROMPT.md` - how to find it, when to skip it, and what sources count
+- `leads.template.csv` - the exact columns
+- `packet.md` / `sources.md` - the evidence and caveats
+- `assets/source-map.md` - source URLs for saved files
+
+Do not stretch the shared rules to fit a mission. Keep the shared rules stable
+and make the mission-specific requirements explicit.
+
 ## Operating Rules
 
 - Research only. Do not contact prospects.
