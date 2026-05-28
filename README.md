@@ -31,6 +31,32 @@ Generated CSVs, notes, screenshots, and packets are ignored by git by default.
 Promote only the templates and instructions that should become part of the
 repo.
 
+## Share This Repo
+
+This repo is public:
+
+```text
+https://github.com/chipthebot/gtm-factory
+```
+
+Friends can clone it, fork it, or copy a mission folder into their own repo.
+
+```sh
+git clone https://github.com/chipthebot/gtm-factory.git
+cd gtm-factory
+```
+
+The repo is designed to work when a fresh agent opens it. Give the agent this:
+
+```text
+Read README.md, AGENTS.md, docs/rules.md, and docs/mission-runbook.md.
+Then help me create or run a mission.
+Use public sources only. Do not contact prospects.
+```
+
+Local research outputs are ignored by git, so a friend can run missions without
+accidentally committing lead lists, screenshots, or packets.
+
 ## Create A Mission
 
 ```sh
