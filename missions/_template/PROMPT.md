@@ -44,7 +44,7 @@ Do not contact anyone.
    - entity type
    - stable dedupe key
    - website or primary profile
-   - public contact route if visible
+   - public contact route only if this mission asks for it
    - target buyer or use case
    - current public signal
    - useful public assets
@@ -68,7 +68,7 @@ missions/[mission-slug]/outputs/{{BATCH_SLUG}}/<prospect-slug>/
    - public signal
    - 2-3 sentence diagnosis
    - 3 concrete directions
-   - draft email and DM for human review, if useful
+   - optional draft note only if this mission asks for drafts
    - risks and claims to verify
 
 7. Append a row to `leads.{{BATCH_SLUG}}.csv`.

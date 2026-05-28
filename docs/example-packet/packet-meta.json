@@ -1,0 +1,22 @@
+{
+  "mission": "example-mission",
+  "batch_slug": "example-segment",
+  "prospect_slug": "north-star-ops",
+  "prospect_name": "EXAMPLE - North Star Ops",
+  "status": "draft",
+  "lead_quality_grade": "A",
+  "lead_quality_score": 5,
+  "review_status": "packet_drafted",
+  "risk_flags": [
+    "public_sources_only",
+    "no_outreach_sent",
+    "synthetic_example"
+  ],
+  "source_urls": [
+    "https://example.com",
+    "https://example.com/launch"
+  ],
+  "assets_path": "docs/example-packet/assets/",
+  "packet_path": "docs/example-packet/packet.md",
+  "collected_at": "2026-05-28"
+}

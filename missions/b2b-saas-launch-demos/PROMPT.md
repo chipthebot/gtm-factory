@@ -2,13 +2,14 @@
 
 Fill placeholders:
 
-- `{{SEGMENT}}`
-- `{{SEGMENT_SLUG}}`
+- `{{BATCH_LABEL}}`
+- `{{BATCH_SLUG}}`
 - `{{COUNT}}`
+- `{{FOCUS}}`
 
 ## Mission
 
-For `{{COUNT}}` B2B SaaS companies in `{{SEGMENT}}`, build public research
+For `{{COUNT}}` B2B SaaS companies in `{{FOCUS}}`, build public research
 packets with demo and launch-story directions for human review.
 
 Do not contact anyone. Do not generate media.
@@ -56,7 +57,7 @@ Do not contact anyone. Do not generate media.
 6. Write `packet.md` with 3 launch/demo directions, 1 video or GIF
    storyboard, 5 founder-post/social hooks, diagnosis, and risks.
 
-7. Append a row to `leads.{{SEGMENT_SLUG}}.csv` and update
+7. Append a row to `leads.{{BATCH_SLUG}}.csv` and update
    `prospect-index.local.csv`.
 
 ## Done

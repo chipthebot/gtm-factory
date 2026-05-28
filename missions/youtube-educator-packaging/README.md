@@ -17,13 +17,14 @@ thumbnail/title and short-form direction pack tied to one recent video.
 - Clear educational topic.
 - Recent uploads.
 - Mixed view patterns or inconsistent thumbnails.
-- Public contact route, site, or newsletter.
+- Public site, newsletter, or contact route if the mission asks for contact
+  research.
 
 ## Reject Fast
 
 - Celebrity-scale creator with a professional team.
 - No recent uploads.
-- No stable channel URL or contact route.
+- No stable channel URL.
 - Topic is too sensitive for cold packaging advice.
 
 ## Packet Output

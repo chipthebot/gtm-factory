@@ -13,6 +13,7 @@ brand-specific campaigns, generated lead lists, or a website.
 - `CLAUDE.md`, symlinked to `AGENTS.md`.
 - `docs/` with sourcing rules, CUA browser notes, the mission runbook, and the
   service-led GTM frame.
+- `docs/example-packet/` with a synthetic completed packet.
 - `templates/` with reusable packet, source, metadata, notes, and CSV schemas.
 - `missions/_template/` for blank usecase hunts.
 - example missions for language creators, DTC product creative, YouTube
@@ -24,7 +25,7 @@ brand-specific campaigns, generated lead lists, or a website.
 2. Read `docs/rules.md`, `docs/mission-runbook.md`, and
    `docs/cua-browser.md`.
 3. Copy `missions/_template/` to `missions/<mission-slug>/`.
-4. Copy `templates/prospect-index.template.csv` to `prospect-index.local.csv`.
+4. Create `prospect-index.local.csv` from the template if it does not exist.
 5. Fill in the mission brief and run prompt.
 
 Generated CSVs, notes, screenshots, and packets are ignored by git by default.
@@ -61,7 +62,7 @@ accidentally committing lead lists, screenshots, or packets.
 
 ```sh
 cp -R missions/_template missions/my-mission
-cp templates/prospect-index.template.csv prospect-index.local.csv
+test -f prospect-index.local.csv || cp templates/prospect-index.template.csv prospect-index.local.csv
 ```
 
 Then edit:
@@ -71,6 +72,51 @@ Then edit:
 - `missions/my-mission/leads.template.csv`
 
 Use `prompts/start-mission.md` when starting a fresh agent run.
+
+## Run A Batch
+
+Use one naming pattern everywhere:
+
+- `MISSION_SLUG`: `my-mission`
+- `BATCH_LABEL`: `Example segment`
+- `BATCH_SLUG`: `example-segment`
+- `COUNT`: `8`, `16`, or `32`
+- `FOCUS`: the market, buyer, or use case
+
+Set up local files:
+
+```sh
+cd missions/my-mission
+cp leads.template.csv leads.example-segment.csv
+cp notes.template.md notes.example-segment.md
+mkdir -p outputs/example-segment
+```
+
+Delete the synthetic sample row from `prospect-index.local.csv` and from the
+new batch CSV before a real run.
+
+For each completed prospect, create:
+
+```text
+missions/my-mission/outputs/example-segment/<prospect-slug>/
+|-- sources.md
+|-- packet.md
+|-- packet-meta.json
+`-- assets/
+    |-- source-map.md
+    `-- missing-assets.txt
+```
+
+Use the shared files in `templates/` as the starting point for those packet
+files.
+
+## Which Prompt Does What
+
+`missions/<mission-slug>/PROMPT.md` is the mission brief. It tells the agent
+what to find, what to skip, and what fields matter.
+
+`prompts/start-mission.md` is the wrapper prompt. Paste it into a fresh agent
+thread after filling in the mission and batch names.
 
 ## Customize A Mission
 
@@ -89,6 +135,9 @@ to the mission itself:
 Keep the repo-wide rules fixed: public sources only, cite URLs, no outreach,
 no logged-in pages, and no invented claims. The mission decides what to
 collect.
+
+Contact routes, possible angles, and draft copy are local artifacts for human
+review. Agents must not send them.
 
 ## Example Missions
 
@@ -109,6 +158,7 @@ gtm-factory/
 |   |-- rules.md
 |   |-- mission-runbook.md
 |   |-- cua-browser.md
+|   |-- example-packet/
 |   `-- service-led-gtm.md
 |-- prompts/
 |   `-- start-mission.md

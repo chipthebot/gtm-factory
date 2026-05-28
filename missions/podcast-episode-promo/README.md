@@ -15,7 +15,8 @@ to judge.
 
 - Recent episode in the last 90 days.
 - Public show page, episode page, or YouTube channel.
-- Host or show has a public contact route.
+- Host or show has a public site or profile. Collect a contact route only if
+  the mission asks for contact research.
 - Credible niche, guest, sponsor, or launch signal.
 - Promo assets are thin, inconsistent, or absent.
 
@@ -23,7 +24,7 @@ to judge.
 
 - Network-backed show with a promo team.
 - Dead show.
-- No public contact route.
+- No stable public show page or profile.
 - No episode pages, clips, or social surface to inspect.
 - Sensitive topic would make cold advice risky.
 

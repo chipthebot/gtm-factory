@@ -2,13 +2,14 @@
 
 Fill placeholders:
 
-- `{{CATEGORY}}`
-- `{{CATEGORY_SLUG}}`
+- `{{BATCH_LABEL}}`
+- `{{BATCH_SLUG}}`
 - `{{COUNT}}`
+- `{{FOCUS}}`
 
 ## Mission
 
-For `{{COUNT}}` DTC brands in `{{CATEGORY}}`, build public research packets
+For `{{COUNT}}` DTC brands in `{{FOCUS}}`, build public research packets
 with product creative opportunities and draft copy for human review.
 
 Do not contact anyone. Do not generate media.
@@ -25,7 +26,7 @@ Do not contact anyone. Do not generate media.
    - sensitive claims dominate the pitch
 
 3. Collect:
-   - brand name, site, product page, public contact route
+   - brand name, site, product page
    - hero product, price if public, offer, bundles
    - paraphrased review themes and objections
    - current ad angles and missing angles
@@ -53,7 +54,7 @@ Do not contact anyone. Do not generate media.
 6. Write `packet.md` with 3 ad-angle directions, 1 creator-style storyboard,
    5 hooks, diagnosis, and risks.
 
-7. Append a row to `leads.{{CATEGORY_SLUG}}.csv` and update
+7. Append a row to `leads.{{BATCH_SLUG}}.csv` and update
    `prospect-index.local.csv`.
 
 ## Done

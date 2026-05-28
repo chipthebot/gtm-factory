@@ -51,7 +51,7 @@ Do not contact anyone.
 5. Grade each lead:
    - `A`: strong audience plus clear resource fit
    - `B`: promising, but one key piece needs verification
-   - `C`: useful for learning, not priority outreach
+   - `C`: useful for learning, not priority human review
    - `D`: weak or risky fit
 
 6. Append rows to `leads.{{BATCH_SLUG}}.csv`.

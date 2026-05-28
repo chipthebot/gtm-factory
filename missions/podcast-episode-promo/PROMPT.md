@@ -2,13 +2,14 @@
 
 Fill placeholders:
 
-- `{{CATEGORY}}`
-- `{{CATEGORY_SLUG}}`
+- `{{BATCH_LABEL}}`
+- `{{BATCH_SLUG}}`
 - `{{COUNT}}`
+- `{{FOCUS}}`
 
 ## Mission
 
-For `{{COUNT}}` podcast hosts in `{{CATEGORY}}`, build public research packets
+For `{{COUNT}}` podcast hosts in `{{FOCUS}}`, build public research packets
 with episode-promo directions for human review.
 
 Do not contact anyone. Do not download full audio or video. Do not generate
@@ -22,12 +23,10 @@ media.
 2. Disqualify fast:
    - network-backed or professionally packaged show
    - no recent episode
-   - no public contact route
    - no public episode, YouTube, or social surface
 
 3. Collect:
    - show name, host, site, Apple/Spotify/YouTube URLs
-   - public contact route
    - category, audience, recent episode, guest/topic
    - current clip, audiogram, quote-card, and social patterns
    - sponsor or launch signal if public
@@ -55,7 +54,7 @@ media.
 6. Write `packet.md` with 3 promo-pack directions, 1 clip/audiogram
    storyboard, 5 hooks, diagnosis, and risks.
 
-7. Append a row to `leads.{{CATEGORY_SLUG}}.csv` and update
+7. Append a row to `leads.{{BATCH_SLUG}}.csv` and update
    `prospect-index.local.csv`.
 
 ## Done

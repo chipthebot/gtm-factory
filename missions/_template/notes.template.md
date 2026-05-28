@@ -43,7 +43,7 @@ Browser mode:
 ## Final
 
 - Total prospects reviewed:
-- Sendable packet count:
+- Human-review packet count:
 - Best 5 leads:
 - Duplicate flags:
 - Tool failures:

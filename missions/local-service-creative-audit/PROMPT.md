@@ -2,15 +2,15 @@
 
 Fill placeholders:
 
-- `{{SERVICE_CATEGORY}}`
-- `{{METRO}}`
-- `{{METRO_SLUG}}`
+- `{{BATCH_LABEL}}`
+- `{{BATCH_SLUG}}`
 - `{{COUNT}}`
+- `{{FOCUS}}`
 
 ## Mission
 
-For `{{COUNT}}` local service businesses in `{{SERVICE_CATEGORY}}` around
-`{{METRO}}`, build public creative-audit packets for human review.
+For `{{COUNT}}` local service businesses in `{{FOCUS}}`, build public
+creative-audit packets for human review.
 
 Do not contact anyone. Do not generate media.
 
@@ -29,7 +29,6 @@ Do not contact anyone. Do not generate media.
 
 3. Collect:
    - business name, service area, website, business profile
-   - public contact route
    - main services
    - visible proof: reviews, certifications, job photos, case studies
    - social and ad activity if public
@@ -58,7 +57,7 @@ Do not contact anyone. Do not generate media.
 6. Write `packet.md` with 3 content/ad directions, 1 short-form concept, 5
    hooks, diagnosis, and privacy or rights risks.
 
-7. Append a row to `leads.{{METRO_SLUG}}.csv` and update
+7. Append a row to `leads.{{BATCH_SLUG}}.csv` and update
    `prospect-index.local.csv`.
 
 ## Done

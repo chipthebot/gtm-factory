@@ -36,6 +36,6 @@ The first deliverable should be concrete enough that a human can judge it in fiv
 
 ## Human Judgment
 
-The factory can collect, summarize, draft, and compare. A human decides what is accurate, fair, useful, and sendable.
+The factory can collect, summarize, draft, and compare. A human decides what is accurate, fair, useful, and worth reviewing.
 
 Do not let throughput lower taste. A smaller batch with honest notes is better than a large batch of vague rows.

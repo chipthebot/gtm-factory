@@ -5,6 +5,13 @@ Batch:
 Date:
 Browser mode:
 
+## Checkpoint Log
+
+- 0-8:
+- 9-16:
+- 17-24:
+- 25-32:
+
 ## Checkpoints
 
 - Accepted:
@@ -15,7 +22,7 @@ Browser mode:
 
 ## Final
 
-- Sendable packet count:
+- Human-review packet count:
 - Strongest product categories:
 - Claim or rights risks:
 - Run another batch:

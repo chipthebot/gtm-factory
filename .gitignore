@@ -4,7 +4,11 @@
 *.local
 
 # Local prospect indexes and generated mission outputs.
+prospect-index.csv
 prospect-index.local.csv
+prospect-index.*.csv
+!templates/prospect-index.template.csv
+missions/**/leads.csv
 missions/**/leads.*.csv
 !missions/**/leads.template.csv
 missions/**/notes.*.md
@@ -12,6 +16,8 @@ missions/**/notes.*.md
 missions/**/outputs/**
 !missions/**/outputs/
 !missions/**/outputs/.gitkeep
+exports/
+packets/
 
 # Scratch files from research runs.
 tmp/

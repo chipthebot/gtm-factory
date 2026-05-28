@@ -11,11 +11,24 @@ the next 8 should continue with the same search pattern.
 Create or verify:
 
 - `prospect-index.local.csv`, copied from `templates/prospect-index.template.csv`
+  only if it does not already exist
 - `missions/<mission-slug>/README.md`
 - `missions/<mission-slug>/PROMPT.md`
 - `missions/<mission-slug>/leads.<batch-slug>.csv`
 - `missions/<mission-slug>/notes.<batch-slug>.md`
 - `missions/<mission-slug>/outputs/<batch-slug>/`
+
+Concrete setup:
+
+```sh
+test -f prospect-index.local.csv || cp templates/prospect-index.template.csv prospect-index.local.csv
+cd missions/<mission-slug>
+cp leads.template.csv leads.<batch-slug>.csv
+cp notes.template.md notes.<batch-slug>.md
+mkdir -p outputs/<batch-slug>
+```
+
+Delete synthetic sample rows from local CSVs before a real run.
 
 Read:
 
@@ -45,7 +58,6 @@ Use status values:
 - `accepted`
 - `rejected`
 - `packet_drafted`
-- `sent`
 - `do_not_contact`
 
 At the end of a batch, audit duplicates across the batch CSV, the local index,
@@ -113,7 +125,17 @@ missions/<mission-slug>/outputs/<batch-slug>/<prospect-slug>/
     `-- missing-assets.txt
 ```
 
-Save only useful public assets. Use lowercase kebab-case filenames:
+Start from the shared packet templates:
+
+- `templates/sources.md`
+- `templates/packet.md`
+- `templates/packet-meta.json`
+- `templates/source-map.md`
+
+Default to source URLs and `source-map.md`. Save public assets only when they
+are needed for review. Keep them inside ignored `outputs/` folders.
+
+Use lowercase kebab-case filenames:
 
 - `homepage.png`
 - `offer-page.png`
@@ -157,7 +179,7 @@ Then write:
 - `lead_quality_score`
 - `creative_reviewer_notes`
 - `five_minute_find`
-- `outreach_hook`
+- `human_review_angle`
 
 Do not confuse specific with invasive. Use public business or creator context,
 not private life details.
@@ -169,7 +191,7 @@ Final notes should include:
 - prospects reviewed
 - A/B/C/D counts
 - best 5 leads
-- sendable packet count
+- human-review packet count
 - average minutes per prospect
 - duplicates and rejected rows
 - common source or tool failures

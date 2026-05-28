@@ -2,13 +2,14 @@
 
 Fill placeholders:
 
-- `{{TOPIC}}`
-- `{{TOPIC_SLUG}}`
+- `{{BATCH_LABEL}}`
+- `{{BATCH_SLUG}}`
 - `{{COUNT}}`
+- `{{FOCUS}}`
 
 ## Mission
 
-For `{{COUNT}}` YouTube educators in `{{TOPIC}}`, build public research
+For `{{COUNT}}` YouTube educators in `{{FOCUS}}`, build public research
 packets with packaging directions for human review.
 
 Do not contact anyone. Do not download full videos or generate media.
@@ -22,7 +23,6 @@ Do not contact anyone. Do not download full videos or generate media.
    - too large or clearly professionally packaged
    - fewer than 10 meaningful videos
    - no recent uploads
-   - no public contact route
    - sensitive advice dominates the channel
 
 3. Collect:
@@ -56,7 +56,7 @@ Do not contact anyone. Do not download full videos or generate media.
 6. Write `packet.md` with 5 thumbnail/title directions for one recent video,
    3 shorts ideas, 1 channel-packaging note, diagnosis, and risks.
 
-7. Append a row to `leads.{{TOPIC_SLUG}}.csv` and update
+7. Append a row to `leads.{{BATCH_SLUG}}.csv` and update
    `prospect-index.local.csv`.
 
 ## Done

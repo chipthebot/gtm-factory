@@ -5,7 +5,7 @@
 - Name:
 - Website:
 - Primary profile:
-- Public contact route:
+- Public contact route, if mission asks:
 - Dedupe key:
 - Collection date:
 

@@ -51,7 +51,6 @@ Every accepted row should include:
 - entity type
 - stable dedupe key type and value
 - website or primary profile
-- public contact route if visible
 - target buyer or use case
 - current public signal
 - source URLs
@@ -59,11 +58,14 @@ Every accepted row should include:
 - grade, score, notes, and risk flags
 - review status
 
+Collect public contact routes only when the mission asks for them. They are
+for human review, not for agent outreach.
+
 ## Quality Grades
 
 - `A`: strong fit, clear public signal, useful source material, natural hook.
 - `B`: promising, but one key piece needs verification.
-- `C`: useful for learning, probably not priority outreach.
+- `C`: useful for learning, probably not priority human review.
 - `D`: poor fit, weak evidence, risky tone, or too generic.
 
 ## Rights And Privacy
@@ -71,6 +73,9 @@ Every accepted row should include:
 Screenshots, logos, social posts, reviews, thumbnails, and product images are
 source material only. Do not republish or transform them into marketing assets
 without human review.
+
+Default to URLs and source maps. Save screenshots or assets only when they are
+needed for review, and save them under ignored `outputs/` folders.
 
 Avoid using private-life details, family details, health details, customer
 secrets, donor details, student details, or anything that would feel invasive
