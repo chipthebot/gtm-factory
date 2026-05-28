@@ -56,10 +56,12 @@ silently. Mark the weaker one and explain which row should win.
 
 Use the safest public path that gets the job done.
 
-1. Browser or Computer Use.
-2. Local CUA CLI if the browser lane breaks.
-3. Playwright for public pages and screenshots.
-4. Web fetch/search for links, facts, and notes.
+1. ComputerUserAgent / native Computer Use, when available.
+2. Browser lane if Computer Use is not available.
+3. Claude Code with `claude --chrome` for browser-heavy runs.
+4. Local CUA CLI if the browser lane breaks.
+5. Playwright for public pages and screenshots.
+6. Web fetch/search for links, facts, and notes.
 
 Never use logged-in, private, paywalled, or session-only pages as a workaround.
 Record the mode used in the notes.
@@ -67,9 +69,20 @@ Record the mode used in the notes.
 Suggested values:
 
 - `browser_mode=computer_use`
+- `browser_mode=browser`
+- `browser_mode=claude_chrome`
 - `browser_mode=cua_bypass`
 - `browser_mode=playwright`
 - `browser_mode=web_fetch_only`
+
+Claude Code browser setup:
+
+```sh
+claude --chrome
+```
+
+Use this when a mission needs Chrome extension-backed browsing and native
+Computer Use is not available.
 
 Basic CUA checks:
 

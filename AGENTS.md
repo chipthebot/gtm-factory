@@ -63,6 +63,16 @@ Use Browser or Computer Use for public pages that need screenshots, visible
 state, or interaction. Prefer Google Chrome Beta so automation does not touch
 the user's main Chrome session.
 
+If ComputerUserAgent / native Computer Use is not available, use a browser
+lane instead of stopping the mission. In Claude Code, start browser-heavy work
+with:
+
+```sh
+claude --chrome
+```
+
+That enables Claude's Chrome extension integration.
+
 When using the local CUA CLI:
 
 ```sh

@@ -1,7 +1,21 @@
 # CUA Browser Use
 
-Use CUA when a mission needs browser state, screenshots, clicking, scrolling,
-or public-page inspection that normal fetch cannot capture.
+Use a browser lane when a mission needs page state, screenshots, clicking,
+scrolling, or public-page inspection that normal fetch cannot capture.
+
+If ComputerUserAgent / native Computer Use is available, use it first. If it
+is not available, use a browser instead of stopping the mission.
+
+In Claude Code, start browser-heavy work with:
+
+```sh
+claude --chrome
+```
+
+That enables Claude's Chrome extension integration.
+
+Use CUA when the normal browser lane is missing, broken, or needs direct app
+control from the terminal.
 
 Prefer Google Chrome Beta:
 
