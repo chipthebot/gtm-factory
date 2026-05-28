@@ -1,0 +1,15 @@
+{
+  "mission": "",
+  "batch_slug": "",
+  "prospect_slug": "",
+  "prospect_name": "",
+  "status": "draft",
+  "lead_quality_grade": "",
+  "lead_quality_score": null,
+  "review_status": "draft",
+  "risk_flags": [],
+  "source_urls": [],
+  "assets_path": "",
+  "packet_path": "",
+  "collected_at": ""
+}

@@ -1,0 +1,2 @@
+mission,batch_slug,prospect_name,entity_type,dedupe_key_type,dedupe_key,website,primary_profile_url,public_contact_or_route,status,lead_quality_grade,lead_csv_path,packet_path,notes,collected_at
+"example-mission","example-batch","EXAMPLE - North Star Ops","company","domain","example.com","https://example.com","https://www.linkedin.com/company/example","public contact page","accepted","A","missions/example-mission/leads.example-batch.csv","","Synthetic sample row; copy to prospect-index.local.csv and delete before a real run.","2026-05-28"

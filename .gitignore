@@ -1,0 +1,19 @@
+.DS_Store
+.env
+.env.*
+*.local
+
+# Local prospect indexes and generated mission outputs.
+prospect-index.local.csv
+missions/**/leads.*.csv
+!missions/**/leads.template.csv
+missions/**/notes.*.md
+!missions/**/notes.template.md
+missions/**/outputs/**
+!missions/**/outputs/
+!missions/**/outputs/.gitkeep
+
+# Scratch files from research runs.
+tmp/
+downloads/
+screenshots/
